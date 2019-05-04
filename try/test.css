@@ -1,0 +1,27 @@
+.big{
+    background-color: blue;
+    width: 100%;
+    overflow: hidden;
+}
+.small{
+    margin: 0 auto;
+    width: 954px;
+    
+}
+.one{
+    float: left;
+    background-color: red;
+    width: 470px;
+    height: 480px;
+}
+.two{
+    float: left;
+    background-color: yellow;
+    width: 470px;
+    height: 480px;
+    margin-left: 14px;
+}
+img{
+    width: 470px;
+    height: 480px;
+}
