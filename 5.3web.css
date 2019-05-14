@@ -9,20 +9,88 @@
 }
 /*左侧logo及网址*/
 .header .logo{
-    margin-top: 25px;
-    margin-left: 190px;
-
+    float: left;
+    margin-top: 23px;
+    margin-left: 97px;
+    width: 200px;
 }
 .header img{
     width: 50px;
-    vertical-align: middle;
+    vertical-align: middle;/*上下居中*/
 }
 .logo a{
+    margin-left: 8px;
     line-height: 50px;
-    vertical-align: middle;
+    vertical-align: middle;/*上下居中*/
+}
+
+.logo a:link{   /*未访问链接*/
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.logo a:hover{  /*鼠标停留样式*/
+    text-decoration: none;
+    color: cornflowerblue;
 }
 /*中间列表*/
 .header .list{
     float: left;
     text-align: center;
+    margin-top: 34px;
+    width: 424px;
+    position: absolute; /*和父元素有关系的定位，和下面的一起用才可以居中*/
+    left: 50%;
+    margin-left: -212px;
+}
+.header .list li{
+    float: left;
+    list-style-type: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.header .list a:link{   /*未访问链接*/
+    text-decoration: none;
+    color: darkgray;
+}
+#shouye{
+    color: grey;    /*“首页”的特殊颜色*/
+}
+.header .list a:hover{  /*鼠标停留样式*/
+    text-decoration: none;
+    color: grey;
+}
+/*右侧个人*/
+.header .mine{
+    float: right;
+    margin-right: 107px;
+    margin-top: 20px;
+}
+.header .mine li{
+    float: left;
+    list-style-type:none ;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.header .mine a:link{   /*未访问链接*/
+    text-decoration: none;
+    color: darkgray;
+}
+.header .mine a:hover{  /*鼠标停留样式*/
+    text-decoration: none;
+    color: grey;
+}
+.header .mine li img{
+    width: 23px;
 }
