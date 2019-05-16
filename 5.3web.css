@@ -94,3 +94,20 @@
 .header .mine li img{
     width: 23px;
 }
+/*中间内容*/
+.main .pic{
+    width: 100%;
+    height: 556px;
+    object-fit: cover; /*这个属性好牛逼！！！无论宽高，加上不变形，值得拥有*/
+
+}
+.main .btn{
+    width: 500px;
+    height: 360px;
+    position: absolute;
+    top: 50%;
+    margin-top: 180px;
+    left: 50%;
+    margin-left: 250px;
+    background-color: #F5704F;
+}
