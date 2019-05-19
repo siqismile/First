@@ -42,7 +42,7 @@
     text-align: center;
     margin-top: 34px;
     width: 424px;
-    position: absolute; /*和父元素有关系的定位，和下面的一起用才可以居中*/
+    position: absolute; /*绝对定位，以左上角的点为标准在动的定位*/
     left: 50%;
     margin-left: -212px;
 }
@@ -55,6 +55,7 @@
     text-align: center;
     margin-left: 12px;
     margin-right: 12px;
+    position: relative;
 }
 .header .list a:link{   /*未访问链接*/
     text-decoration: none;
@@ -66,6 +67,22 @@
 .header .list a:hover{  /*鼠标停留样式*/
     text-decoration: none;
     color: grey;
+}
+/*分两部分，前面是触发条件，后面是要修改的属性，以:hover分开*/
+.header .list li:hover .hide{
+    display: block;
+}
+.header .list .hide{
+    width: 200px;
+    display: none;
+    position: absolute;
+}
+.header .list .hide li{
+    display: block;
+    padding: 5px 10px;
+    background-color: #292C35;
+    color: white;
+    font-size: 110%;
 }
 /*右侧个人*/
 .header .mine{
@@ -95,19 +112,58 @@
     width: 23px;
 }
 /*中间内容*/
-.main .pic{
+.main a{
+    text-decoration: none;
+}
+.main .pic img{
     width: 100%;
-    height: 556px;
+    height: 622px;
     object-fit: cover; /*这个属性好牛逼！！！无论宽高，加上不变形，值得拥有*/
 
 }
+.main .pic{
+    position: relative;
+}
 .main .btn{
-    width: 500px;
-    height: 360px;
+    width: 600px;
+    height: 300px;
     position: absolute;
     top: 50%;
-    margin-top: 180px;
+    text-align: center;
+    margin-top: -150px;
     left: 50%;
-    margin-left: 250px;
-    background-color: #F5704F;
+    margin-left: -300px;
+    text-align: center;
+}
+.main .pic .btn p{
+    color: white;
+}
+.main .pic .btn p .p1{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.main .pic .btn p .p2{
+    font-size: 55px;
+    line-height: 108%;
+}
+/*大图上文字最下面的超动感的“阅读更多”*/
+.main .pic .btn .more{
+    padding: 10px 20px;
+    position: absolute;
+    top: 80%;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -60px;
+    display: block;
+    width: 80px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border: white 2px solid;
+
+}
+/*老公写的牛逼哄哄的代码*/
+.main .pic .btn .more:hover{
+    background-color: white;
+    color: black;
 }
